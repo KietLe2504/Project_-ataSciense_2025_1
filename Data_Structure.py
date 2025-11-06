@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from collections import defaultdict
-data = np.load("youtube_comments (3000 videos).npy", allow_pickle=True)
+data = np.load("Project_-ataSciense_2025_1\youtube_comments (3000 videos).npy", allow_pickle=True)
 
 #This data have Channel Name, Channel ID, Video Name, Video ID, Commenter, Comment
 #Now take only Name_Channel
