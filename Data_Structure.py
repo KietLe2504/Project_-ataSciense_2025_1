@@ -1,9 +1,10 @@
 import numpy as np
 import pandas as pd
 from collections import defaultdict
-data = np.load("Project_-ataSciense_2025_1\youtube_comments (3000 videos).npy", allow_pickle=True)
+data = np.load("youtube_comments.npy", allow_pickle=True)
+print(len(data))
 
-#This data have Channel Name, Channel ID, Video Name, Video ID, Commenter, Comment
+#This data have Channel Name, Channel ID, Video Name, Video ID, Commenter, Comment, Like, Time, 
 #Now take only Name_Channel
 def create_channel_feature(data):
     videos = defaultdict(set)
@@ -12,7 +13,7 @@ def create_channel_feature(data):
     num_commentors = defaultdict(int)
     Channel = set()
     for info in data:
-        Channel_Name, _ , Video_Name, _ ,Commentor, _ = info
+        Channel_Name, Channel_ID , Video_Name, Video_ID ,Commentor, Comment, Like, Time, Code = info
         videos[Channel_Name].add(Video_Name)
         commentors[Channel_Name].add(Commentor)
         Channel.add(Channel_Name)
