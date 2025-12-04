@@ -22,3 +22,6 @@ Run this command:
 ```bash
 docker run -d --name <container-name> --ulimit nofile=262144:262144 -p 8123:8123 -p 9000:9000 -v clickhouse_data:/var/lib/clickhouse -v clickhouse_logs:/var/log/clickhouse-server clickhouse/clickhouse-server
 ```
+- container-name: name of your container, e.g. clickhouse-server
+- 8123 and 9000: two ports for access, 9000 for terminal and 8123 for web [http://localhost:8123](http://localhost:8123) and Python
+- clickhouse_data and clickhouse_logs: volumes for data, remain in Docker even the container is removed
