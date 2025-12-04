@@ -33,7 +33,7 @@ docker ps
 docker volume ls
 ```
 
-Now run this command to access the container-name bash
+Now run this command to access the clickhouse-server bash
 ```bash
 docker exec -it clickhouse-server bash
 ```
