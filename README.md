@@ -68,3 +68,4 @@ Add this account in user section:
 - This is an account with username admin
 - There is an account with username default already in the file
 - It is recommended to set password for default account and its access_management to 0
+- Ctrl + O and press Enter to Save, Ctrl + X to exit
