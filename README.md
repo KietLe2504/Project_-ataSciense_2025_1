@@ -16,3 +16,9 @@ On Windows, open Windows PowerShell or Cmd and run this command:
 ```bash
 docker pull clickhouse/clickhouse-server:latest
 ```
+
+## Create new container for Clickhouse database
+Run this command:
+```bash
+docker run -d --name <container-name> --ulimit nofile=262144:262144 -p 8123:8123 -p 9000:9000 -v clickhouse_data:/var/lib/clickhouse -v clickhouse_logs:/var/log/clickhouse-server clickhouse/clickhouse-server
+``'
