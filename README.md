@@ -88,7 +88,7 @@ client = clickhouse_connect.get_client(
 ```
 
 ## Notation
-Before using Clickhouse on Python, you must start Docker and start clickhouse-server:
+Before using Clickhouse on Python, you must start Docker and clickhouse-server:
 ```bash
 docker start clickhouse-server
 ```
