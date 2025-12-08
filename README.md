@@ -80,7 +80,7 @@ Open python file and insert the following code:
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(
-    host=localhost,
+    host='localhost',
     port=8123,
     username="admin",
     password="your-custom-password"
